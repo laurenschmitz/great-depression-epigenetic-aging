@@ -1,9 +1,9 @@
 **************************************************************************************************************
-***PRE-ANALYSIS ADJUSTMENTS TO THE INFANT MORTALITY RATE IN 1928***	
-	*Project: In Utero Exposure to the Great Depression is Reflected in Late-Life Epigenetic Aging Signatures
-	*Authors: Lauren L. Schmitz and Valentina Duque
+***PRE-ANALYSIS ADJUSTMENTS TO THE 1928 INFANT MORTALITY RATE DATA***	
+	*Project: Early-life Exposure to the Great Depression and Long-term Health and Economic Outcomes
+	*Authors: Valentina Duque and Lauren L. Schmitz
 	*Analyst: Lauren L. Schmitz
-	*Date updated: August 2022
+	*Date updated: June 2023
 **************************************************************************************************************
 
 clear
@@ -11,7 +11,7 @@ set more off
 
 	*Import Infant Birth and Death Data from NBER 
 
-		use "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Raw_NBER_Infant_Birth_Death_Data.dta" 
+		use "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Raw_NBER_Infant_Birth_Death_Data.dta" 
 			*Data source: D. Norton, Data on Infant Mortality and Births, 1920-1945. Natl. Bur. Econ. Res. (2007).
 			*URL to data on NBER website: https://www.nber.org/research/data/vital-statistics-births-and-infant-mortality-1920-1945
 
@@ -151,5 +151,5 @@ set more off
 		label var st_born2 "HRS state of birth code"
 		label var infmort1k_1928 "Infant mortality per 1000 births, 1928"
 		
-save "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/NBER_Infant_Mortality_Data_FINAL.dta", replace
+save "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/NBER_Infant_Mortality_Data_FINAL.dta", replace
 

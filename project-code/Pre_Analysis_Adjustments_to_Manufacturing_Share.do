@@ -1,9 +1,9 @@
 **************************************************************************************************************
-***PRE-ANALYSIS ADJUSTMENTS TO CENSUS MANUFACTURING SHARE DATA in 1929***	
-	*Project: In Utero Exposure to the Great Depression is Reflected in Late-Life Epigenetic Aging Signatures
-	*Authors: Lauren L. Schmitz and Valentina Duque
+***PRE-ANALYSIS ADJUSTMENTS TO 1929 CENSUS MANUFACTURING SHARE DATA***	
+	*Project: Early-life Exposure to the Great Depression and Long-term Health and Economic Outcomes
+	*Authors: Valentina Duque and Lauren L. Schmitz
 	*Analyst: Lauren L. Schmitz
-	*Date updated: August 2022
+	*Date updated: June 2023
 **************************************************************************************************************
 
 clear
@@ -11,7 +11,7 @@ set more off
 
 	*Import Maternal Mortality Rates 
 
-		use "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Raw_Census_Labor_Force_Data_by_State.dta" 
+		use "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Raw_Census_Labor_Force_Data_by_State.dta" 
 			*Data source for the numerator of the manufacturing share: U.S. Census Bureau, 1930 Census: Manufacturers, 1929 Volume 3. Reports by States. Statistics for Industrial Areas, Counties, and Cities. (1933). Data were taken from the “Wage earners (average for the year)” column for 1929 for each state. 
 			*Data source for the denominator of the manufacturing share: U.S. Census Bureau, 1930 Census: Volume 4. Occupations, by States. Reports by States, Giving Statistics for Cities of 25,000 or More. United States Summary. (1933). Data for each state were taken from Table 5, p. 18, Column 2, “Total gainfully occupied persons”
 			
@@ -83,5 +83,5 @@ set more off
 		label var st_born2 "HRS state of birth code"
 		label var manf_share "Share of wage earners in manufacturing, 1929"
 
-save "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Census_Manf_Share_Data_FINAL.dta", replace
+save "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Census_Manf_Share_Data_FINAL.dta", replace
 

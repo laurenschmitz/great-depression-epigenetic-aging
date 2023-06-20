@@ -1,9 +1,9 @@
 **************************************************************************************************************
 ***PRE-ANALYSIS ADJUSTMENTS TO THE WAGE INDEX***	
-	*Project: In Utero Exposure to the Great Depression is Reflected in Late-Life Epigenetic Aging Signatures
-	*Authors: Lauren L. Schmitz and Valentina Duque
+	*Project: Early-life Exposure to the Great Depression and Long-term Health and Economic Outcomes
+	*Authors: Valentina Duque and Lauren L. Schmitz
 	*Analyst: Lauren L. Schmitz
-	*Date updated: August 2022
+	*Date updated: June 2023
 **************************************************************************************************************
 
 clear
@@ -11,7 +11,7 @@ set more off
 
 	*Import Farm and Non-Farm Wage Data by State 
 
-		use "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Raw_BEA_Salary_Data" 
+		use "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Raw_BEA_Salary_Data" 
 			*Data source: U.S. Bureau of Economic Analysis, SAINC7H Wages and Salaries by Industry (Historical) 1929-1957
 			*URL to data on BEA website: https://apps.bea.gov/iTable/iTable.cfm?reqid=70&step=30&isuri=1&year_end=-1&classification=sic&state=0&yearbegin=-1&unit_of_measure=index&major_area=0&area=xx&year=-1&tableid=16&category=429&area_type=0&statistic=50&selected_income_data=0
 

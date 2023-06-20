@@ -1,16 +1,16 @@
 **************************************************************************************************************
 ***PRE-ANALYSIS ADJUSTMENTS TO THE EMPLOYMENT INDEX***	
-	*Project: In Utero Exposure to the Great Depression is Reflected in Late-Life Epigenetic Aging Signatures
-	*Authors: Lauren L. Schmitz and Valentina Duque
+	*Project: Early-life Exposure to the Great Depression and Long-term Health and Economic Outcomes
+	*Authors: Valentina Duque and Lauren L. Schmitz
 	*Analyst: Lauren L. Schmitz
-	*Date updated: August 2022
+	*Date updated: June 2023
 **************************************************************************************************************
 
 clear
 set more off
 
 	*Import Employment Data (Manufacturing + Non-Manufacturing) by State 
-		use "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Raw_Employment_Index_Data.dta"
+		use "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Raw_Employment_Index_Data.dta"
 			*Data source: J. J. Wallis, Employment in the Great Depression: New data and hypotheses. Explor. Econ. Hist. 26, 45–72 (1989)
 			
 		*Assign HRS coding for state of birth for merge with HRS data
@@ -158,4 +158,4 @@ set more off
 		label var st_born_name "State of birth name"
 		label var st_born2 "HRS state of birth code"
 	
-save "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Employment_Index_Data_w_ETS_FINAL.dta", replace
+save "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Employment_Index_Data_w_ETS_FINAL.dta", replace

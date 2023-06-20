@@ -1,9 +1,9 @@
 **************************************************************************************************************
-***PRE-ANALYSIS ADJUSTMENTS TO WWII MOBILIZATION RATES***	
-	*Project: In Utero Exposure to the Great Depression is Reflected in Late-Life Epigenetic Aging Signatures
-	*Authors: Lauren L. Schmitz and Valentina Duque
+***PRE-ANALYSIS ADJUSTMENTS TO WWII MOBILIZATION RATES***
+	*Project: Early-life Exposure to the Great Depression and Long-term Health and Economic Outcomes
+	*Authors: Valentina Duque and Lauren L. Schmitz
 	*Analyst: Lauren L. Schmitz
-	*Date updated: August 2022
+	*Date updated: June 2023
 **************************************************************************************************************
 
 clear
@@ -11,7 +11,7 @@ set more off
 
 	*Import Climate and Rural Electrification Data
 
-		use "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Raw_WWII_Mobilization_Rates.dta" 
+		use "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Raw_WWII_Mobilization_Rates.dta" 
 			*Data source: D. Acemoglu, D. H. Autor, D. Lyle. Women, War, and Wages: The Effect of Female Labor Supply on the Wage Structure at Midcentury. J. Polit. Econ. 112, 497–551 (2004).
 
 			rename statename st_born_name
@@ -80,5 +80,5 @@ set more off
 
 		order st_born_name st_born2 
 		
-	save "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/WWII_Mobilization_Rates_FINAL.dta", replace
+	save "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/WWII_Mobilization_Rates_FINAL.dta", replace
 

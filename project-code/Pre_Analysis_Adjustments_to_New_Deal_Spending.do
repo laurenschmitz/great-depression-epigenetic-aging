@@ -1,9 +1,9 @@
 **************************************************************************************************************
-***PRE-ANALYSIS ADJUSTMENTS TO DATA ON NEW DEAL SPENDING***	
-	*Project: In Utero Exposure to the Great Depression is Reflected in Late-Life Epigenetic Aging Signatures
-	*Authors: Lauren L. Schmitz and Valentina Duque
+***PRE-ANALYSIS ADJUSTMENTS TO NEW DEAL SPENDING DATA***	
+	*Project: Early-life Exposure to the Great Depression and Long-term Health and Economic Outcomes
+	*Authors: Valentina Duque and Lauren L. Schmitz
 	*Analyst: Lauren L. Schmitz
-	*Date updated: August 2022
+	*Date updated: June 2023
 **************************************************************************************************************
 
 clear
@@ -11,7 +11,7 @@ set more off
 
 	*Import Infant Birth and Death Data from NBER 
 
-		use "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/Raw_New_Deal_Data.dta" 
+		use "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/Raw_New_Deal_Data.dta" 
 			*Data source: Fishback, Price, and Kantor, Shawn. New Deal Studies: New Deal Spending. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2018-11-18. https://doi.org/10.3886/E101199V1-24102
 
 				drop state
@@ -124,4 +124,4 @@ set more off
 		label var st_born2 "HRS state of birth code"
 		label var total_relief_pc_cs "Total per capita New Deal spending on relief, public works, farm programs, and housing"
 		
-save "/Users/laurenschmitz/Dropbox/2022_ACTIVE_PROJECTS/Duque_&_Schmitz/GD_Epigenetic_Clocks_Project/Data/New_Deal_Spending_Data_FINAL.dta", replace
+save "/Users/laurenschmitz/Dropbox/2023_ACTIVE_PROJECTS/Duque_&_Schmitz/Data/New_Deal_Spending_Data_FINAL.dta", replace
